@@ -1,0 +1,157 @@
+
+/*reset*/
+
+*{
+  padding: 0;
+  box-sizing: 0;
+  
+}
+
+
+
+/*Estilos generales*/
+
+
+#icon1{
+    width: 8%;
+    height: 8%;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+ }
+
+
+
+
+ /* nav bar*/
+
+ header{
+  
+
+    align-items: center;
+    justify-content: space-between;
+    
+ }
+
+ #navItems { 
+  
+    display:flex;
+    z-index:1;
+    position:fixed;
+    top:0;
+    flex-wrap:nowrap;
+    display: flex;
+    font-size: 1.3rem;
+   
+    
+  }
+
+a{
+  text-decoration: none;
+  color: black 
+
+}
+
+
+li {
+  display: inline;
+  margin-left: 250px
+  
+}
+
+
+/*cuerpo de las paginas*/
+  body {
+
+    background-color:beige
+
+  }
+
+
+
+
+
+/*Index*/
+
+#fotoindex{
+  width: 100%;
+  
+
+}
+
+
+/*Destinos mb*/
+
+
+
+
+.contenedor{
+
+display:flex;
+flex-wrap: wrap;
+}
+  
+.img{
+  background-color: rgb(173, 115, 39);
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  flex-flow: column;
+  margin: 10px;
+  padding: 10px;
+ 
+}
+
+
+
+
+
+
+  /*mq de tablet*/
+
+  @media screen and (min-width:600px) {}
+
+  
+  
+
+  /*mq de desktop*/
+
+  @media screen and (min-width:1024px){}
+
+
+  
+  
+
+  
+
+
+
+  
+
+
+
+
+/*Los mejores hoteles*/
+
+/*Playas*/
+
+/*Quienes somos*/
+
+h1{
+    color: violet;
+    text-align: center;
+}
+
+
+.parrafo{
+    color: crimson;
+}
+
+p{
+    size: 20px;
+}
+ 
+
