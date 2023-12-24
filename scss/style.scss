@@ -1,13 +1,11 @@
-//comentario sass
-/* comentario en los dos lados*/
+//comentario sass 
+/*comentario en los dos lados*/
 
 //nesting
 
-//import
-@import "scss/index.scss"
+/**/
 
-//
-
+@import "/css/style.css";
 
 
   //Estilos generales 
@@ -18,18 +16,44 @@
     }
   
     footer {
-      background-color: #495cdd;
+      background-color: #336699;
       color: white;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
-      margin-top: auto; 
+      margin-top: 20px; 
     }
-  
-  
+
+    footer a {
+      color: #fff; 
+      text-decoration: none; 
+      border-bottom: none; 
+      transition: color 0.3s ease; 
+    }
+    
+    footer a:hover {
+      color: #ffcc00; 
+    }
+    
+
+// Define la variable de la fuente Raleway
+$raleway-font: 'Raleway', sans-serif;
+
+body {
+  font-family: $raleway-font;
+
+}
+
+html body {
+  background-color:#ffffff;
+}
+
+
   /* nav bar */
   header {
+    font-family: $raleway-font;
     align-items: center;
     justify-content: space-between;
+    
   
     a {
       text-decoration: none;
@@ -42,25 +66,55 @@
     }
   }
   
-  /* cuerpo de las paginas */
-  body {
-    background-color: #f5f5f5;
-  }
+ 
   
   /* Index */
   .div1 {
     width: 100%;
   }
   
+ 
+  .p1,
+.p2 {
+  width: calc(40% - 20px); 
+  background-color: #336699;
+  display: inline-block;
+  margin: 2%;
+  box-sizing: border-box;
+  margin-left: 5%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#fotoindex {
+  margin-bottom: 20px; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+
+@media screen and (max-width: 767px) {
   .p1,
   .p2 {
-    width: 50%;
-    background-color: #495cdd;
-    margin: 0;
-    display: inline;
-    float: left;
+    width: 100%; 
+    float: none; 
+    margin: 10px 0; 
   }
-  
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
   .p2 {
     float: right;
   }
@@ -76,7 +130,45 @@
       flex-direction: column;
     }
   }
+  select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: cursive, sans-serif;
+    outline: 0;
+    background:#336699;
+    color: #fff;
+    border: 1px solid rgb(220, 100, 20);
+    padding: 4px;
+    border-radius: 9px;
+  }
   
+  
+
+// Estilos para el formulario principal
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 600px; 
+
+  // Estilos para el grupo de destinos
+  #lang {
+    flex: 1; 
+  }
+
+ 
+  #fecha {
+    flex: 1; 
+    margin: 0; 
+  }
+}
+
+// Estilos para las etiquetas
+label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
   /* Ajustes para el contenedor principal */
   body {
     display: flex;
@@ -105,16 +197,74 @@
   }
   
   .foto {
-    background-color: #495cdd;
+    background-color: #083969;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-flow: column;
-    margin: 10px;
+    margin: 10px; /* Ajusta el margen según tu preferencia */
     padding: 10px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+.foto {
+  background-color: #083969;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+}
+
+.foto img {
+  max-width: 100%;
+  height: auto;
+}
+
+  // Estilos generales para la sección de parrafos
+.parrafo {
+  margin: 20px; // Agrega márgenes de 20px alrededor de la sección
+  padding: 20px; // Agrega un relleno interno de 20px para separar el contenido de los bordes
+  box-sizing: border-box; // Incluye el relleno y el borde en el ancho y alto del elemento
+
+  // Estilos adicionales para el texto dentro de la sección
+  p {
+    margin-bottom: 15px; // Agrega un espacio entre párrafos
   }
-  
+}
+
   /* mq de tablet */
   @media screen and (min-width: 600px) {
   }
@@ -144,7 +294,8 @@
   
   /* Playas */
   .image-container,
-  .image-container2 {
+  .image-container2 
+  {
     display: flex;
   
     img {
@@ -154,14 +305,19 @@
     }
   }
   
+  
+  
+
   /* Quienes somos */
   h1 {
-    color: #4caf50;
+    color: #336699;
     text-align: center;
+    margin-top: 30px;
   }
   
   .parrafo {
-    color: #4caf50;
+    color: #336699;
+    
   }
   
   p {
