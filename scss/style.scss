@@ -5,9 +5,13 @@
 
 /**/
 
+
 @import "/css/style.css";
 
-
+//variables
+$color-principal:rgb(255, 255, 255);
+$color-secundario:rgba(184, 184, 184, 0.628);
+$color-terciario:black;
   //Estilos generales 
 
   
@@ -17,7 +21,7 @@
   
     footer {
       background-color: #336699;
-      color: white;
+      color: #ffffff;
       padding: 30px;
       text-align: center;
       margin-top: 20px; 
@@ -74,14 +78,19 @@ html body {
   }
   
  
-  .p1,
-.p2 {
+  .p1, .p2 {
   width: calc(40% - 20px); 
-  background-color: #336699;
+  background-color: #{$color-secundario};
   display: inline-block;
   margin: 2%;
   box-sizing: border-box;
   margin-left: 5%;
+  border: 8px solid #{$color-principal};
+  border-radius: 25px;
+  padding: 10px;
+  color: #{$color-terciario};
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .clearfix::after {
@@ -90,8 +99,14 @@ html body {
   clear: both;
 }
 
-#fotoindex {
+#FotoLogo {
   margin-bottom: 20px; 
+  width: 35%;
+  height: 35%;
+}
+.fondoImagen {
+  background-image:url(../Images/fondo-pagina.jpg) ;
+
 }
 
 label {
@@ -280,15 +295,18 @@ label {
   
     /* Estilo para la foto del hotel */
     .img img {
-      width: 640px;
-      height: auto;
+      width: 100%;
+      height: 68%;
       margin-right: 10px;
+      margin: 25px;
     }
   
     /* Estilo para el mapa */
     .map {
       flex: 1;
-      height: 300px;
+      width: 100%;
+      height: 78.5%;
+      margin: 25px;
     }
   }
   
@@ -310,17 +328,66 @@ label {
 
   /* Quienes somos */
   h1 {
-    color: #336699;
-    text-align: center;
-    margin-top: 30px;
+    color: #{$color-principal};
+    border: 8px solid;
+    border-radius: 18px;
+    padding: 10px;
+    font-weight: bold;
   }
-  
+  #inicio{
+    color: #{$color-principal};
+    border: 8px solid;
+    border-radius: 18px;
+    padding: 10px;
+    font-weight: bold;
+  }
+
   .parrafo {
-    color: #336699;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: #{$color-terciario};
+    background-color: #{$color-secundario};
+    border: 8px solid #{$color-principal};
+    border-radius: 8px;
+    padding: 10px;
+    margin: 100px;
+    font-size: 20px;
+    font-weight: bolder;
     
   }
   
   p {
     font-size: 20px;
+  }
+  
+  .ubicarForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+    border: 4px solid #{$color-principal};
+    border-radius: 20px;
+    background-color: #{$color-secundario};
+    color: #{$color-terciario};
+    font-size: 25px;
+
+  }
+
+  .estiloLabel{
+    color: white;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  h2{
+    color: #{$color-terciario};
+    display: flex;
+    align-self: center;
+    margin: 15px;
+    font-size:30px;
+    font-weight: bo;
   }
   
