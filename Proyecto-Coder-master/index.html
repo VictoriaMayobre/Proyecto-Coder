@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link de bt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!--Link css-->
+    <link rel="stylesheet" href="scss/style.css">
+
+    <!--Fuente-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+
+    <!--titulo-->
+    <title>Agencia de Viajes</title>
+</head>
+
+<body class="fondoImagen">
+    
+    <!--nav bar-->
+    <header> 
+      
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid"> <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav"> <li class="nav-item"> <a class="nav-link active" aria-current="page" href="Playas.html">Playas</a></li>
+                <li class="nav-item"> <a class="nav-link" href="Destinos.Html">Destinos</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="Hoteles.Html">Hoteles</a> </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="Quienesomos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Quienes somos </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Quienesomos.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="Quienesomos.html">Consulta</a></li>
+                <li><a class="dropdown-item" href="Quienesomos.html">Crear cuenta</a></li>
+              </ul>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+     </header>
+      
+    <!--Titulo de pagina-->
+    <h1 id="inicio">Inicio</h1>
+
+    <!--fotodeinicio-->
+    <img src="Images/Logo.png" alt="" id="FotoLogo">
+
+    <form action="#"> <label class="estiloLabel" for="lang">A donde quieres ir?</label>
+    <select name="languages" id="lang">
+      <option value="select">Destinos</option>
+      <option value="javascript">Alemania</option>
+      <option value="php">Croacia</option>
+      <option value="java">España</option>
+      <option value="golang">Punta Cana</option>
+      <option value="python">Mexico</option>
+      <option value="c#">Estados Unidos</option>
+      <option value="C++">Rusia</option>
+      <option value="erlang">Japon</option>
+  </select>
+ 
+  <button type="button" class="btn btn-outline-light">Buscar</button>
+  </form>
+
+  <label class="estiloLabel"  for="fecha">Selecciona una fecha de partida:</label>
+  <input type="date" id="fecha" name="fecha">
+
+  <label class="estiloLabel"  for="fecha">Selecciona una fecha de llegada:</label>
+  <input type="date" id="fecha" name="fecha">
+
+    <div class="container-p"> 
+        <p class="p1" >
+        La elección de una agencia de viajes adecuada es crucial para garantizar una experiencia única y sin complicaciones. En este sentido, nuestra agencia, Viajes Explora, se destaca por ofrecer un servicio integral que va más allá de la simple organización de itinerarios. Nuestro equipo de expertos en viajes está comprometido en proporcionar asesoramiento personalizado, adaptándose a las necesidades y deseos individuales de cada cliente. Desde la planificación del viaje hasta la atención en destino, nos esforzamos por brindar un servicio de alta calidad.</p>
+    
+        <p class="p2">Viajar brinda innumerables beneficios, desde la apertura de horizontes y la ampliación de perspectivas culturales hasta el desarrollo personal y la reducción del estrés. Al sumergirte en entornos nuevos, te enfrentas a desafíos que fomentan la adaptabilidad y la resolución de problemas, al tiempo que las interacciones con personas diversas fortalecen tus habilidades sociales. Además, la experiencia de viajar estimula la creatividad y proporciona constantes oportunidades de aprendizaje, contribuyendo así a un enriquecimiento significativo de tu vida.</p>
+    </div>
+  
+    <div class="video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/zKlZah1n4os?si=ROJDuV1aZUj9QwMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body> 
+
+    <!--Footer-->
+
+<footer>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Contacto</h4>
+        <p>Dirección: Calle Viajes, Ciudad Explora</p>
+        <p>Email: info@viajesexplora.com</p>
+        <p>Teléfono: +1 (123) 456-7890</p>
+      </div>
+
+      <div class="col-md-4">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="playas.html">Playas</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="hoteles.html">Hoteles</a></li>
+          <li><a href="quienesomos.html">Quiénes Somos</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h4>Síguenos</h4>
+        <p>Conéctate con nosotros en las redes sociales:</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/PersonalTravelUy/?locale=es_LA" target="_blank" title="Facebook"><i class="fab fa-facebook">Facebook</i></a>
+      <a href="https://twitter.com/PersonalTravel_" target="_blank" title="Twitter"><i class="fab fa-twitter">Twitter</i></a>
+       <a href="https://www.instagram.com/personaltraveluy/?hl=es" target="_blank" title="Instagram"><i class="fab fa-instagram">Instagram</i></a>
+    </div>
+</footer>
+
+</html>
